@@ -6,7 +6,6 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Calendar;
-import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 
@@ -32,7 +31,7 @@ public class calendarUtilities {
 		return m;
 	}
 
-	private long noOfDays(LocalDate startDate, LocalDate endDate, DayOfWeek dayOfWeek) {
+	long noOfDays(LocalDate startDate, LocalDate endDate, DayOfWeek dayOfWeek) {
 		if (endDate.isBefore(startDate)) {
 			throw new IllegalArgumentException("Start date " + startDate + " can't be greate than last date " + endDate);
 		}
