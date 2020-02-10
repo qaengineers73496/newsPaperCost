@@ -1,0 +1,16 @@
+#files
+.project
+.classpath
+cucumber.json
+
+
+#directory
+/test-output/
+target/
+test-output/
+/target/
+target/
+bin/
+classes/
+.settings/
+screenshots/
