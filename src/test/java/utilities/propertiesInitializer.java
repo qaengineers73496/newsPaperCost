@@ -10,15 +10,13 @@ public class propertiesInitializer {
 	private InputStream inputStream;
 	private String propFileName;
 
-	public propertiesInitializer(String file) {
-		this.propFileName = file;
-	}
+	public propertiesInitializer() {}
 
 	public Properties getPropValues() throws IOException {
 
 		try {
 			prop = new Properties();
-			String propFileName = ".\\priceSource\\masterPriceList.properties";
+			propFileName = ".\\priceSource\\masterPriceList.properties";
 			inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
 			if (inputStream != null) {
 				prop.load(inputStream);
