@@ -33,4 +33,7 @@ public class testClass4Utilities {
 		System.out.println("Total cost of multiple subscriptions between dates :" + allCost);
 	}
 
+//	private long printCost(LocalDate startDate, LocalDate endDate, String[] publication) {
+//		
+//	}
 }
