@@ -36,7 +36,8 @@ public class calendarUtilities {
 			throw new IllegalArgumentException("Start date " + startDate + " can't be greate than last date " + endDate);
 		}
 
-		LocalDate firstDOW = startDate.with(TemporalAdjusters.next(dayOfWeek));
+//		LocalDate firstDOW = startDate.with(TemporalAdjusters.next(dayOfWeek));
+		LocalDate firstDOW = startDate.with(TemporalAdjusters.nextOrSame(dayOfWeek));
 		LocalDate lastDOW = endDate.with(TemporalAdjusters.previous(dayOfWeek));
 
 		long number = ChronoUnit.WEEKS.between(firstDOW, lastDOW);
